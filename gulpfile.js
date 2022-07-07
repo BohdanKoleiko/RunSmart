@@ -16,7 +16,7 @@ gulp.task('server', function() {
 
 //Compress, add min prefix to css file, add autoprefix then clean css, put its in css folder and reload browsersync plugin
 gulp.task('styles', function() {
-  return gulp.src("./sass/*.+(scss|sass)")
+  return gulp.src("./sass/**/*.+(scss|sass)")
     .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
     .pipe(rename({
       prefix: "",
@@ -30,7 +30,7 @@ gulp.task('styles', function() {
 
 //Wath for changes of sass files and html
 gulp.task('watch', function() {
-  gulp.watch('./sass/*.+(scss|sass)', gulp.parallel("styles"));
+  gulp.watch('./sass/**/*.+(scss|sass)', gulp.parallel("styles"));
   gulp.watch('./*.html').on('change', browserSync.reload);
 });
 
