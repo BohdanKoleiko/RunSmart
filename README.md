@@ -1,1 +1,1 @@
-# RunSmart is website about smart health gadgets
+# RunSmart is a website about smart health gadgets
