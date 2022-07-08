@@ -1,10 +1,14 @@
 @import './base/variables';
+@import './base/mixins';
+
 *{
-   font-family: 'Museo Sans Cyrl', sans-serif;
+   font-family: 'MuseoModerno', sans-serif;
 }
+
 html, body{
    height: 100%;
 }
+
 .container{
    max-width: 977px;
    padding: 0 15px;
@@ -16,6 +20,10 @@ html, body{
    flex-direction: column;
    width: 100%;
    height: 100%;
+   &_fixed{
+      position: fixed;
+      overflow: visible;
+   }
 }
 
 .main{
@@ -26,3 +34,5 @@ html, body{
 @import './blocks/introduce';
 @import './blocks/header';
 @import './blocks/strengths';
+
+@import './base/media';
