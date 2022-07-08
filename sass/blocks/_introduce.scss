@@ -31,7 +31,9 @@
       }
    }
    &__img{
-      width: 136px;
+      //width: 136px;
+      flex: 0 1 25%;
+
       text-align: center;
       font-weight: 500;
       @include px-to-em(font-size, 14);
@@ -44,7 +46,7 @@
       @include px-to-em(font-size, 16);
    }
    &__link{
-      margin-top: 8px;
+      margin-top: 12px;
       color: #FFF;
       a{
          color: #FFF;
