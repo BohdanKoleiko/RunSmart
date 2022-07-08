@@ -1,0 +1,39 @@
+.strengths{
+   padding: 70px 0 67px 0;
+   background: #F6F6F6;
+   color: #0D0D0D;
+   &__main-heading{
+      font-weight: 700;
+      font-size: 30px;
+      text-transform: uppercase;
+
+      text-align: center;
+   }
+   &__wrap{
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+
+      margin-top: 60px;
+      margin-left: -50px;
+      margin-right: -50px;
+   }
+   &__inner{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      flex: 1 0 0;
+      padding: 0 50px;
+   }
+   &__title{
+      font-weight: 700;
+      font-size: 18px;
+      margin-top: 35px;
+   }
+   &__text{
+      font-weight: 300;
+      font-size: 14px;
+      text-align: center;
+      margin-top: 20px;
+   }
+}
