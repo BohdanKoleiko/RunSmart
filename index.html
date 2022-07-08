@@ -5,12 +5,20 @@
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>RunSmart</title>
+
+   <!-- Connection fonts -->
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=MuseoModerno:wght@300;400;500;700&display=swap" rel="stylesheet">
+   
+   <!-- Connection styles -->
    <link rel="stylesheet" href="./css/bootstrap-reboot.min.css" type="text/css">
-   <link rel="stylesheet" href="./css/font.css" type="text/css">
+   <!--<link rel="stylesheet" href="./css/font.css" type="text/css">-->
    <link rel="stylesheet" href="./css/style.min.css" type="text/css">
 </head>
 <body>
    <div class="wrapper">
+
       <div class="introduce">
          <div class="container">
             <header class="header">
@@ -23,6 +31,22 @@
                <div class="header__call-back">
                   <a href="tel:+380502354824" class="header__phone">+38 (050) 23-54-824</a>
                   <button class="header__button button">заказать звонок</button>
+               </div>
+               
+               <!-- For burger menu -->
+               <div class="menu">
+                  <div class="menu__ambassador">
+                     Официальный представитель <span>Garmin, Polar, Suunto</span>
+                  </div>
+                  <div class="menu__call-back">
+                     <a href="tel:+380502354824" class="header__phone">+38 (050) 23-54-824</a>
+                     <button class="menu__button button">заказать звонок</button>
+                  </div>
+               </div>
+               <div class="burger">
+                  <span></span>
+                  <span></span>
+                  <span></span>
                </div>
             </header>
             <div class="introduce__help-choose">
@@ -100,6 +124,8 @@
       <footer class="footer">
          Footer
       </footer>
+      
    </div>
+   <script src="./js/script.js"></script>
 </body>
 </html>

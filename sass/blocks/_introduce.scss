@@ -1,6 +1,7 @@
 .introduce{
    background: url(../../img/background/bg.jpg) center (center/cover) no-repeat;
    padding: 21px 0 93px 0;
+   font-size: 1rem;
    &__help-choose{
       display: flex;
       flex-direction: column;
@@ -10,12 +11,12 @@
    }
    &__title{
       font-weight: 700;
-      font-size: 42px;
+      @include px-to-em(font-size, 42);
       color: #FFFFFF;
    }
    &__sub-title{
       font-weight: 500;
-      font-size: 24px;
+      @include px-to-em(font-size, 24);
       color: #FFFFFF;
    }
    &__images{
@@ -30,20 +31,22 @@
       }
    }
    &__img{
-      width: 136px;
+      //width: 136px;
+      flex: 0 1 25%;
+
       text-align: center;
       font-weight: 500;
-      font-size: 14px;
+      @include px-to-em(font-size, 14);
       color: #FFF;
    }
    &__button{
       margin-top: 65px;
       width: 300px;
       height: 50px;
-      font-size: 16px;
+      @include px-to-em(font-size, 16);
    }
    &__link{
-      margin-top: 8px;
+      margin-top: 12px;
       color: #FFF;
       a{
          color: #FFF;
