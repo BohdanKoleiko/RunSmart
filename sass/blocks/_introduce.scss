@@ -1,0 +1,52 @@
+.introduce{
+   background: url(../../img/background/bg.jpg) center (center/cover) no-repeat;
+   padding: 21px 0 93px 0;
+   &__help-choose{
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      
+      margin-top: 91px;
+   }
+   &__title{
+      font-weight: 700;
+      font-size: 42px;
+      color: #FFFFFF;
+   }
+   &__sub-title{
+      font-weight: 500;
+      font-size: 24px;
+      color: #FFFFFF;
+   }
+   &__images{
+      display: flex;
+      justify-content: space-between;
+
+      margin-top: 60px;
+      img{
+         display: block;
+         margin: 0 auto;
+         margin-bottom: 20px;
+      }
+   }
+   &__img{
+      width: 136px;
+      text-align: center;
+      font-weight: 500;
+      font-size: 14px;
+      color: #FFF;
+   }
+   &__button{
+      margin-top: 65px;
+      width: 300px;
+      height: 50px;
+      font-size: 16px;
+   }
+   &__link{
+      margin-top: 8px;
+      color: #FFF;
+      a{
+         color: #FFF;
+      }
+   }
+}
