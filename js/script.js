@@ -24,9 +24,9 @@
 //    })
 //})
 window.addEventListener('DOMContentLoaded', () => {
-    const burger = document.querySelector('.burger');
-    const menu = document.querySelector('.menu');
-    const fixed_wrapper = document.querySelector('.wrapper')
+    const burger        = document.querySelector('.burger');
+    const menu          = document.querySelector('.menu');
+    const fixed_wrapper = document.querySelector('.wrapper');
 
     burger.addEventListener('click', () => {
         burger.classList.toggle('burger_active');
