@@ -11,24 +11,29 @@
    }
    &__wrap{
       display: flex;
-      justify-content: center;
+      justify-content: space-between;
       flex-wrap: wrap;
 
-      margin: 0 -5.2798%;
+      margin: 0 -3.590%;
       margin-top: 40px;
-      //margin-left: -50px;
-      //margin-right: -50px;
    }
    &__inner{
       display: flex;
       flex-direction: column;
       align-items: center;
-      flex: 0 1 33.3%;
 
-      min-width: 303px;
-      //padding: 0 50px;
-      padding: 0 5.2798%;
+      min-width: 252px;
+      padding: 0 3.349%;
       margin-top: 20px;
+      &_little{
+         flex: 0 1 28.405%;
+      }
+      &_medium{
+         flex: 0 1 28.83%;
+      }
+      &_big{
+         flex: 0 1 29.250%;
+      }
    }
    &__title{
       font-weight: 700;
