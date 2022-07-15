@@ -8,24 +8,6 @@
    .container{
       max-width: 720px;
    }
-
-   .strengths{
-      &__wrap{
-         justify-content: center;
-      }
-      &__inner{
-         max-width: 370px;
-         &_little{
-            flex-grow: 1;
-         }
-         &_medium{
-            flex-grow: 1;
-         }
-         &_big{
-            flex-grow: 1;
-         }
-      }
-   }
 }
 
 @media screen and (max-width: 767px ) {
@@ -70,11 +52,8 @@
 }
 
 @media screen and (max-width: 575px ) {
-   .container{
-      max-width: 100%;
-   }
-   
    .introduce{
+      max-width: 100%;
       font-size: 0.9rem;
    }
 }
@@ -103,7 +82,7 @@
    
    .strengths{
       &__inner{
-         //padding: 0;
+         padding: 0;
          min-width: 290px;
       }
    }
