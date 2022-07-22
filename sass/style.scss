@@ -3,6 +3,7 @@
 
 *{
    font-family: 'MuseoModerno', sans-serif;
+   list-style-type: none;
 }
 
 html, body{
@@ -36,5 +37,6 @@ html, body{
 @import './blocks/strengths';
 @import './blocks/free-help';
 @import './blocks/carousel';
+@import './blocks/catalog';
 
 @import './base/media';
