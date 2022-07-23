@@ -1,7 +1,12 @@
 .footer{
-   background: url(../../img/background/map.jpg) center center / cover no-repeat;
+   //background: url(../../img/background/map.jpg) center center / cover no-repeat;
    padding-top: 32.81%;
    position: relative;
+   &__map{
+      position: absolute;
+      top: 0;
+      width: 100%;
+   }
    &__wrap{
       position: absolute;
       top: 0;
