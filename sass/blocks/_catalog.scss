@@ -1,5 +1,5 @@
 .catalog{
-   padding: 0 0 79px 0;
+   padding: 0 0 60px 0;
    &__title{
       text-align: center;
       font-weight: 400;
@@ -48,8 +48,9 @@
    }
    &__content{
       display: none;
-      justify-content: space-between;
+      //justify-content: space-between;
       flex-wrap: wrap;
+      margin: 0 -8.5px;
       &_active{
          display: flex;
       }
@@ -59,6 +60,7 @@
       flex-direction: column;
       max-width: 303px;
       padding: 20px;
+      margin: 0 8.5px 19px 8.5px;
       border: 2px solid #E8E8E8;
       overflow: hidden;
    }
@@ -176,11 +178,13 @@
    &__price-sale{
       font-weight: 300;
       font-size: 14px;
+      line-height: 1;
       text-decoration: line-through;
    }
    &__normal-price{
       font-weight: 700;
       font-size: 20px;
+      line-height: 1;
    }
    &__buy-button{
       font-size: 14px;
