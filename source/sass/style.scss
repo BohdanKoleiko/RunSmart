@@ -1,0 +1,42 @@
+@import './base/variables';
+@import './base/mixins';
+
+*{
+   font-family: 'MuseoModerno', sans-serif;
+   list-style-type: none;
+}
+
+.container{
+   max-width: 977px;
+   padding: 0 15px;
+   margin: 0 auto;
+}
+
+.wrapper{
+   display: flex;
+   flex-direction: column;
+   width: 100%;
+   height: 100%;
+   &_fixed{
+      position: fixed;
+      overflow: visible;
+   }
+}
+
+.main{
+   flex: 1 0 auto;
+}
+
+@import './blocks/buttons';
+@import './blocks/form';
+@import './blocks/introduce';
+@import './blocks/header';
+@import './blocks/strengths';
+@import './blocks/free-help';
+@import './blocks/carousel';
+@import './blocks/catalog';
+@import './blocks/feedback';
+@import './blocks/footer';
+@import './blocks/overlay';
+
+@import './base/media';
