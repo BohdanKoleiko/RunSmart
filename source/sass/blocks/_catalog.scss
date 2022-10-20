@@ -48,9 +48,9 @@
    }
    &__content{
       display: none;
-      //justify-content: space-between;
       flex-wrap: wrap;
-      margin: 0 -8.5px;
+      column-gap: 17px;
+      row-gap: 19px;
       &_active{
          display: flex;
       }
@@ -58,9 +58,8 @@
    &__content-cards{
       display: flex;
       flex-direction: column;
-      max-width: 303px;
+      max-width: 270px;
       padding: 20px;
-      margin: 0 8.5px 19px 8.5px;
       border: 2px solid #E8E8E8;
       overflow: hidden;
    }
