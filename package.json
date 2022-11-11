@@ -34,5 +34,8 @@
     "defaults",
     "not IE 11",
     "maintained node versions"
-  ]
+  ],
+  "dependencies": {
+    "gulp-htmlmin": "^5.0.1"
+  }
 }

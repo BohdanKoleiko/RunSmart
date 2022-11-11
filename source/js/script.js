@@ -42,7 +42,7 @@ $(document).ready(function(){
           .closest('div.container').find('div.catalog__content').removeClass('catalog__content_active').eq($(this).index()).addClass('catalog__content_active');
     });
 
-    //code for more inforamtion
+    // code for more inforamtion
     //$('.catalog__more-link').each(function(i) {
     //    $(this).on('click', function(e) {
     //        e.preventDefault();
@@ -58,9 +58,9 @@ $(document).ready(function(){
     //        $('.catalog__card-descr').eq(i).toggleClass('catalog__card-descr_active');
     //    })
     //});
-    //end code
+    // end code
 
-    //a short version of the code above
+    // a short version of the code above
     function toggleSlide(link) {
         $(link).each(function(i) {
             $(this).on('click', function(e) {
@@ -73,5 +73,25 @@ $(document).ready(function(){
 
     toggleSlide('.catalog__more-link');
     toggleSlide('.catalog__back-link');
-    //end code
+    // end code
+
+    // Modal
+    // Отримую елемент по атребуту data-modal, цей атрибут придуманий мною, і при натисканні на цю кнопку я відкриваю блок overlay і вікно callback
+    $('[data-modal=callback]').on('click', function() {
+        $('.overlay, #callback').fadeIn(200);
+    });
+    //При натисканні на блок modal__close я буду закривати overlay, #callback, #order і #thank
+    $('.modal__close').on('click', function() {
+        $('.overlay, #callback, #order, #thank').fadeOut(200)
+    });
+    //При натисканні на кнопку catalog__buy-button я показую .overlay і #order вікна
+    $('.catalog__buy-button').on('click', function() {
+        $('.overlay, #order').fadeIn(200);
+    })
+    //Для вставляння назви товара який замовляється
+    $('.catalog__buy-button').each(function(i) {
+        $(this).on('click', function() {
+            $('#order .modal__subtitle').text($('.catalog__header').eq(i).text());
+        });
+    });
 })
