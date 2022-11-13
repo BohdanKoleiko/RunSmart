@@ -1,8 +1,8 @@
-.carousel-section{
-   &__wrap{
+.carousel-section {
+   &__wrap {
       padding: 81px 0;
    }
-   &__item{
+   &__item {
       padding-top: 61.25%;
       height: 100%;
    }
@@ -13,10 +13,10 @@
    width: 1.9375rem;
    height: 3.125rem;
 }
-.carousel-control-prev-icon{
-   background-image: url(../../imaged/chevron.png);
+.carousel-control-prev-icon {
+   background-image: url(../../images/chevron.png);
 }
-.carousel-control-next-icon{
-   background-image: url(../../imaged/chevron.png);
+.carousel-control-next-icon {
+   background-image: url(../../images/chevron.png);
    transform: rotateY(180deg);
 }
