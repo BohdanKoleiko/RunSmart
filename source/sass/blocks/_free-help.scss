@@ -1,11 +1,12 @@
-.free-help{
+.free-help {
+   background: url(../../images/background/bg2.jpg) center center/cover
+      no-repeat;
 
-   &__wrap{
-      background: url(../../images/background/bg2.jpg) center center/cover no-repeat;
+   &__wrap {
       padding: 100px 0 108px 0;
       color: #fff;
    }
-   &__title{
+   &__title {
       font-weight: 700;
       font-size: 36px;
       line-height: 54px;
@@ -15,7 +16,7 @@
       padding-right: 144px;
       padding-left: 4px;
    }
-   &__sub-title{
+   &__sub-title {
       font-weight: 500;
       font-size: 20px;
       line-height: 30px;
