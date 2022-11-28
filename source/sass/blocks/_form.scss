@@ -1,4 +1,4 @@
-.form{
+.form {
    display: flex;
    flex-direction: column;
    justify-content: center;
@@ -8,7 +8,7 @@
    font-size: 14px;
    padding-left: 4px;
 
-   &__input{
+   &__input {
       height: 50px;
       width: 300px;
 
@@ -17,18 +17,28 @@
 
       border: none;
       border-radius: 6px;
-      &:nth-child(3){
+      &:nth-child(3) {
          margin-bottom: 17px;
       }
-      &::placeholder{
-         color: #4B4B4B;
+      &::placeholder {
+         color: #4b4b4b;
          opacity: 1;
       }
    }
 
-   &__button{
+   &__button {
       height: 58px;
       width: 300px;
       font-size: 16px;
+   }
+
+   .input-wrap {
+      position: relative;
+      .just-validate-error-label {
+         position: absolute;
+         top: -3px;
+         left: 20px;
+         max-width: 300px;
+      }
    }
 }

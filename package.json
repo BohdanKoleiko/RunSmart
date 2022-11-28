@@ -36,6 +36,7 @@
     "maintained node versions"
   ],
   "dependencies": {
-    "gulp-htmlmin": "^5.0.1"
+    "gulp-htmlmin": "^5.0.1",
+    "just-validate": "^3.8.1"
   }
 }

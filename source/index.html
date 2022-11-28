@@ -166,34 +166,40 @@
       </div>
 
       <div class="overlay">
-         <div class="modal" id="callback">
+         <div class="modal callback">
             <div class="modal__wrap">
                <h3 class="modal__title">Просто заполните форму заявки</h3>
                <h4 class="modal__subtitle">
                   и мы перезвоним вам в течении 10 минут
                </h4>
-               <form action="#" class="form modal__form" autocomplete="on">
-                  <input
-                     required
-                     name="name"
-                     type="text"
-                     placeholder="Ваше имя"
-                     class="form__input"
-                  />
-                  <input
-                     required
-                     name="tel"
-                     type="tel"
-                     placeholder="Ваш телефон"
-                     class="form__input"
-                  />
-                  <input
-                     required
-                     name="email"
-                     type="email"
-                     placeholder="Ваш E-mail"
-                     class="form__input"
-                  />
+               <form action="#" class="form modal__form" id="callback">
+                  <div class="input-wrap">
+                     <input
+                        name="name"
+                        id="name"
+                        type="text"
+                        placeholder="Ваше имя"
+                        class="form__input"
+                     />
+                  </div>
+                  <div class="input-wrap">
+                     <input
+                        name="tel"
+                        id="tel"
+                        type="tel"
+                        placeholder="Ваш телефон"
+                        class="form__input"
+                     />
+                  </div>
+                  <div class="input-wrap">
+                     <input
+                        name="email"
+                        id="email"
+                        type="email"
+                        placeholder="Ваш E-mail"
+                        class="form__input"
+                     />
+                  </div>
                   <button class="form__button button modal__button">
                      заказать кОНСУЛЬТАЦИЮ
                   </button>
@@ -202,32 +208,38 @@
             <div class="modal__close"></div>
          </div>
 
-         <div class="modal" id="order">
+         <div class="modal order">
             <div class="modal__wrap">
                <h3 class="modal__title">Ваш заказ:</h3>
                <h4 class="modal__subtitle">Пульсометр Polar FT1</h4>
-               <form action="#" class="form modal__form">
-                  <input
-                     required
-                     name="name"
-                     type="text"
-                     placeholder="Ваше имя"
-                     class="form__input"
-                  />
-                  <input
-                     required
-                     name="tel"
-                     type="tel"
-                     placeholder="Ваш телефон"
-                     class="form__input"
-                  />
-                  <input
-                     required
-                     name="email"
-                     type="email"
-                     placeholder="Ваш E-mail"
-                     class="form__input"
-                  />
+               <form action="#" class="form modal__form" id="order">
+                  <div class="input-wrap">
+                     <input
+                        name="name"
+                        id="name"
+                        type="text"
+                        placeholder="Ваше имя"
+                        class="form__input"
+                     />
+                  </div>
+                  <div class="input-wrap">
+                     <input
+                        name="tel"
+                        id="tel"
+                        type="tel"
+                        placeholder="Ваш телефон"
+                        class="form__input"
+                     />
+                  </div>
+                  <div class="input-wrap">
+                     <input
+                        name="email"
+                        id="email"
+                        type="email"
+                        placeholder="Ваш E-mail"
+                        class="form__input"
+                     />
+                  </div>
                   <button class="form__button button modal__button">
                      Купить
                   </button>
@@ -257,7 +269,11 @@
       <!--JQuery script-->
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 
+      <!-- justValidate plugin -->
+      <script src="https://unpkg.com/just-validate@latest/dist/just-validate.production.min.js"></script>
+
       <!--My own script-->
+      <script src="./js/formValid.js"></script>
       <script src="./js/script.js"></script>
    </body>
 </html>
