@@ -35,23 +35,23 @@ $(document).ready(function () {
     // Отримую елемент по атребуту data-modal, цей атрибут придуманий мною, і при натисканні на цю кнопку 
     // я відкриваю блок overlay і вікно callback
     $('[data-modal=callback]').on('click', function () {
-        $('.overlay, #callback').fadeIn(300);
+        $('.overlay, .callback').fadeIn(300);
         $('body').css('overflow', 'hidden');
     });
     //При натисканні на блок modal__close я буду закривати overlay, #callback, #order і #thank
     $('.modal__close').on('click', function () {
-        $('.overlay, #callback, #order, #thank').fadeOut(300);
+        $('.overlay, .callback, .order, .thank').fadeOut(300);
         $('body').css('overflow', 'unset');
     });
     //При натисканні на кнопку catalog__buy-button я показую .overlay і #order вікна
     $('.catalog__buy-button').on('click', function () {
-        $('.overlay, #order').fadeIn(300);
+        $('.overlay, .order').fadeIn(300);
         $('body').css('overflow', 'hidden');
     });
     //Для вставляння назви товара який замовляється
     $('.catalog__buy-button').each(function (i) {
         $(this).on('click', function () {
-            $('#order .modal__subtitle').text($('.catalog__header').eq(i).text());
+            $('.order .modal__subtitle').text($('.catalog__header').eq(i).text());
         });
     });
 });
