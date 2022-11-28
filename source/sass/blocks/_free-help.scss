@@ -9,20 +9,58 @@
    &__title {
       font-weight: 700;
       font-size: 36px;
-      line-height: 54px;
+      line-height: 1.5;
       text-transform: uppercase;
 
       margin-bottom: 8px;
-      padding-right: 144px;
       padding-left: 4px;
+
+      max-width: 810px;
    }
    &__sub-title {
       font-weight: 500;
       font-size: 20px;
-      line-height: 30px;
+      line-height: 1.5;
 
       margin-bottom: 38px;
-      padding-right: 517px;
       padding-left: 4px;
+
+      max-width: 400px;
+   }
+}
+
+#free-help__form {
+   max-width: 300px;
+}
+
+@media screen and (max-width: 767px) {
+   .free-help {
+      &__wrap {
+         padding: 60px 0 80px;
+      }
+
+      &__title {
+         font-size: 34px;
+      }
+
+      &__sub-title {
+         font-size: 18px;
+      }
+   }
+}
+
+@media screen and (max-width: 575px) {
+   .free-help {
+      &__wrap {
+         padding: 40px 0 60px;
+      }
+
+      &__title {
+         font-size: 32px;
+      }
+
+      &__sub-title {
+         font-size: 14px;
+      }
    }
 }
