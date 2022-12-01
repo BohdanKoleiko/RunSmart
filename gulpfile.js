@@ -41,9 +41,9 @@ gulp.task('styles', function () {
 //Wath for changes of sass/scss files and html
 gulp.task('watch', function () {
   gulp.watch('./source/sass/**/*.+(scss|sass|css)', gulp.parallel('styles'));
-  gulp.watch('./source/**/*.html').on('change', browserSync.reload);
   gulp.watch('./source/**/*.html').on('change', gulp.parallel('html'));
   gulp.watch('./source/js/**/*.js').on('change', gulp.parallel('scripts'));
+  gulp.watch('./source/**/*.html').on('change', browserSync.reload);
 });
 
 gulp.task('html', function () {
