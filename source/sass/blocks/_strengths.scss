@@ -1,23 +1,23 @@
-.strengths{
+.strengths {
    padding: 70px 0 67px 0;
-   background: #F6F6F6;
-   color: #0D0D0D;
-   &__main-heading{
+   background: #f6f6f6;
+   color: #0d0d0d;
+   &__main-heading {
       font-weight: 700;
       font-size: 30px;
       text-transform: uppercase;
 
       text-align: center;
    }
-   &__wrap{
+   &__wrap {
       display: flex;
       justify-content: space-between;
       flex-wrap: wrap;
 
-      margin: 0 -3.590%;
+      margin: 0 -3.59%;
       margin-top: 40px;
    }
-   &__inner{
+   &__inner {
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -25,25 +25,43 @@
       min-width: 252px;
       padding: 0 3.349%;
       margin-top: 20px;
-      &_little{
+      &_little {
          flex: 0 1 28.405%;
       }
-      &_medium{
+      &_medium {
          flex: 0 1 28.83%;
       }
-      &_big{
-         flex: 0 1 29.250%;
+      &_big {
+         flex: 0 1 29.25%;
       }
    }
-   &__title{
+   &__title {
       font-weight: 700;
       font-size: 18px;
-      margin-top: 35px;
+      margin-bottom: 20px;
    }
-   &__text{
+   &__text {
       font-weight: 300;
       font-size: 14px;
       text-align: center;
-      margin-top: 20px;
+      margin-bottom: 0;
+   }
+   &__img-wrap {
+      margin-bottom: 35px;
+      &:hover {
+         .heart {
+            animation: heartBeat 2s infinite ease-in;
+            //animation-name: heartBeat;
+            //animation-duration: 1.2s;
+            //animation-iteration-count: infinite;
+         }
+         .cup {
+            position: relative;
+            animation: goblet 2s infinite ease-in;
+         }
+         .shoe {
+            animation: shoe 1.5s infinite;
+         }
+      }
    }
 }
