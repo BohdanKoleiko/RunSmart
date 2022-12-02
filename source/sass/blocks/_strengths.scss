@@ -50,14 +50,14 @@
       margin-bottom: 35px;
       &:hover {
          .heart {
-            animation: heartBeat 2s infinite ease-in;
+            animation: heartBeat 1.5s infinite;
             //animation-name: heartBeat;
             //animation-duration: 1.2s;
             //animation-iteration-count: infinite;
          }
          .cup {
             position: relative;
-            animation: goblet 2s infinite ease-in;
+            animation: goblet 1.5s infinite ease-in;
          }
          .shoe {
             animation: shoe 1.5s infinite;
