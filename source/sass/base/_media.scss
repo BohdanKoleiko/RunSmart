@@ -1,51 +1,51 @@
-@media screen and (max-width: 1024px ) {
-   .container{
+@media screen and (max-width: 1024px) {
+   .container {
       max-width: 960px;
    }
 }
 
-@media screen and (max-width: 991px ) {
-   .container{
+@media screen and (max-width: 991px) {
+   .container {
       max-width: 720px;
    }
 
-   .strengths{
-      &__wrap{
+   .strengths {
+      &__wrap {
          justify-content: center;
       }
-      &__inner{
+      &__inner {
          max-width: 370px;
-         &_little{
+         &_little {
             flex-grow: 1;
          }
-         &_medium{
+         &_medium {
             flex-grow: 1;
          }
-         &_big{
+         &_big {
             flex-grow: 1;
          }
       }
    }
 }
 
-@media screen and (max-width: 767px ) {
-   .container{
+@media screen and (max-width: 767px) {
+   .container {
       max-width: 540px;
    }
 
-   .header{
-      &__logo{
+   .header {
+      &__logo {
          width: 180px;
       }
-      &__ambassador{
+      &__ambassador {
          display: none;
       }
-      &__call-back{
+      &__call-back {
          display: none;
       }
    }
 
-   .menu{
+   .menu {
       display: block;
       position: fixed;
       top: 0;
@@ -57,53 +57,52 @@
       height: 100vh;
 
       transition: right 0.4s;
-      &_active{
-         right: 0
+      &_active {
+         right: 0;
       }
    }
 
-   .burger{
+   .burger {
       display: flex;
       flex-direction: column;
       justify-content: space-between;
    }
 }
 
-@media screen and (max-width: 575px ) {
-   .container{
+@media screen and (max-width: 575px) {
+   .container {
       max-width: 100%;
    }
-   
-   .introduce{
+
+   .introduce {
       font-size: 0.9rem;
    }
 }
 
-@media screen and (max-width: 481px ) {
-   .introduce{
+@media screen and (max-width: 481px) {
+   .introduce {
       background-position: 15% center;
       font-size: 0.65rem;
       padding-bottom: 60px;
-      &__help-choose{
+      &__help-choose {
          align-items: center;
 
          margin-top: 61px;
       }
-      &__images{
+      &__images {
          margin-top: 50px;
       }
-      &__button{
+      &__button {
          width: 250px;
          font-size: 1.4em;
       }
-      &__link{
+      &__link {
          font-size: 1.2em;
       }
    }
-   
-   .strengths{
-      &__inner{
-         //padding: 0;
+
+   .strengths {
+      &__inner {
          min-width: 290px;
       }
    }
