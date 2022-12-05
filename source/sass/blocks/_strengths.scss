@@ -48,6 +48,11 @@
    }
    &__img-wrap {
       margin-bottom: 35px;
+   }
+}
+
+@media screen and (min-width: 768.9px) {
+   .strengths__img-wrap {
       &:hover {
          .heart {
             animation: heartBeat 1.5s infinite;
@@ -62,6 +67,34 @@
          .shoe {
             animation: shoe 1.5s infinite;
          }
+      }
+   }
+}
+
+@media screen and (max-width: 991px) {
+   .strengths {
+      &__wrap {
+         justify-content: center;
+      }
+      &__inner {
+         max-width: 370px;
+         &_little {
+            flex-grow: 1;
+         }
+         &_medium {
+            flex-grow: 1;
+         }
+         &_big {
+            flex-grow: 1;
+         }
+      }
+   }
+}
+
+@media screen and (max-width: 481px) {
+   .strengths {
+      &__inner {
+         min-width: 290px;
       }
    }
 }
