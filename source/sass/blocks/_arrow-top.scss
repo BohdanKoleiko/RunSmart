@@ -4,6 +4,7 @@
    position: fixed;
    bottom: 30px;
    right: 50px;
+   z-index: 10;
 
    width: 45px;
    height: 45px;
@@ -11,7 +12,6 @@
    background-color: $main-color;
    border-radius: 50%;
 
-   opacity: 0.5;
    transition: opacity 0.4s ease-in-out;
 
    box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.616);
@@ -19,8 +19,20 @@
       display: block;
       fill: #fff;
    }
+}
 
-   &:hover {
-      opacity: 1;
+@media screen and (min-width: 768.9px) {
+   .arrow-back-top {
+      opacity: 0.5;
+      &:hover {
+         opacity: 1;
+      }
+   }
+}
+
+@media screen and (max-width: 481px) {
+   .arrow-back-top {
+      bottom: 18px;
+      right: 18px;
    }
 }
