@@ -1,4 +1,4 @@
-.button{
+.button {
    width: 153px;
    height: 32px;
 
@@ -10,5 +10,14 @@
    font-weight: 500;
    font-size: 12px;
    text-transform: uppercase;
-   color: #FFFFFF;
+   color: #ffffff;
+
+   transition: all 0.5s ease-in-out;
+}
+
+@media screen and (min-width: 768px) {
+   .button:hover {
+      background-color: rgb(227, 0, 0);
+      box-shadow: 2px 2px 6px rgb(41, 41, 41);
+   }
 }
