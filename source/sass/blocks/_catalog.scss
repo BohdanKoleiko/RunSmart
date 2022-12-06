@@ -32,7 +32,8 @@
    &__main-content,
    &__list,
    &__txt,
-   &__price {
+   &__price,
+   &__header {
       flex: 1 1 auto;
    }
 
@@ -123,7 +124,7 @@
    }
    &__img-wrap {
       display: block;
-      max-width: 140px;
+      max-width: 255px;
       max-height: 200px;
       margin-bottom: 15px;
    }
@@ -226,7 +227,7 @@
 @media screen and (min-width: 991px) {
    .catalog {
       &__content-cards {
-         flex: 1 1 calc(100% / 3 - 17);
+         flex: 1 1 calc(100% / 3 - 17px);
       }
    }
 }
