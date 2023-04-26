@@ -1,44 +1,100 @@
-.strengths{
+.strengths {
    padding: 70px 0 67px 0;
-   background: #F6F6F6;
-   color: #0D0D0D;
-   &__main-heading{
+   background: #f6f6f6;
+   color: #0d0d0d;
+   &__main-heading {
       font-weight: 700;
       font-size: 30px;
       text-transform: uppercase;
 
       text-align: center;
    }
-   &__wrap{
+   &__wrap {
       display: flex;
-      justify-content: center;
+      justify-content: space-between;
       flex-wrap: wrap;
 
-      margin: 0 -5.2798%;
+      margin: 0 -3.59%;
       margin-top: 40px;
-      //margin-left: -50px;
-      //margin-right: -50px;
    }
-   &__inner{
+   &__inner {
       display: flex;
       flex-direction: column;
       align-items: center;
-      flex: 0 1 33.3%;
 
-      min-width: 303px;
-      //padding: 0 50px;
-      padding: 0 5.2798%;
+      min-width: 252px;
+      padding: 0 3.349%;
       margin-top: 20px;
+      &_little {
+         flex: 0 1 28.405%;
+      }
+      &_medium {
+         flex: 0 1 28.83%;
+      }
+      &_big {
+         flex: 0 1 29.25%;
+      }
    }
-   &__title{
+   &__title {
       font-weight: 700;
       font-size: 18px;
-      margin-top: 35px;
+      margin-bottom: 20px;
    }
-   &__text{
+   &__text {
       font-weight: 300;
       font-size: 14px;
       text-align: center;
-      margin-top: 20px;
+      margin-bottom: 0;
+   }
+   &__img-wrap {
+      margin-bottom: 35px;
+   }
+}
+
+@media screen and (min-width: 768.9px) {
+   .strengths__img-wrap {
+      &:hover {
+         .heart {
+            animation: heartBeat 1.5s infinite;
+            //animation-name: heartBeat;
+            //animation-duration: 1.2s;
+            //animation-iteration-count: infinite;
+         }
+         .cup {
+            position: relative;
+            animation: goblet 1.5s infinite ease-in;
+         }
+         .shoe {
+            animation: shoe 1.5s infinite;
+         }
+      }
+   }
+}
+
+@media screen and (max-width: 991px) {
+   .strengths {
+      &__wrap {
+         justify-content: center;
+      }
+      &__inner {
+         max-width: 370px;
+         &_little {
+            flex-grow: 1;
+         }
+         &_medium {
+            flex-grow: 1;
+         }
+         &_big {
+            flex-grow: 1;
+         }
+      }
+   }
+}
+
+@media screen and (max-width: 481px) {
+   .strengths {
+      &__inner {
+         min-width: 290px;
+      }
    }
 }
