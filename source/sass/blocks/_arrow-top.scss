@@ -21,7 +21,7 @@
    }
 }
 
-@media screen and (min-width: 768.9px) {
+@media screen and (min-width: 768px) {
    .arrow-back-top {
       opacity: 0.5;
       &:hover {
@@ -30,7 +30,7 @@
    }
 }
 
-@media screen and (max-width: 481px) {
+@media screen and (max-width: 768px) {
    .arrow-back-top {
       bottom: 18px;
       right: 18px;
