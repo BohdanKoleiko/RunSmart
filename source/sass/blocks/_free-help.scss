@@ -33,7 +33,7 @@
    max-width: 300px;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
    .free-help {
       &__wrap {
          padding: 60px 0 80px;
@@ -47,6 +47,10 @@
          font-size: 18px;
       }
    }
+
+   #free-help__form {
+      max-width: none;
+   }
 }
 
 @media screen and (max-width: 575px) {
@@ -56,11 +60,19 @@
       }
 
       &__title {
-         font-size: 32px;
+         font-size: 28px;
       }
 
       &__sub-title {
          font-size: 14px;
+      }
+   }
+}
+
+@media screen and (max-width: 425px) {
+   .free-help {
+      &__title {
+         font-size: 24px;
       }
    }
 }
