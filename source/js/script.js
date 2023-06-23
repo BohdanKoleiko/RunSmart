@@ -3,6 +3,17 @@ const menu = document.querySelector('.menu');
 const fixedWrapper = document.querySelector('.wrapper');
 const arrowTop = document.querySelector('.arrow-back-top');
 
+
+function showScrollTopBtn() {
+   if (document.documentElement.scrollTop > 1160) {
+      return arrowTop.style.display = 'block';
+   } else {
+      return arrowTop.style.display = 'none';
+   }
+}
+
+showScrollTopBtn();
+
 window.addEventListener('DOMContentLoaded', () => {
    burger.addEventListener('click', () => {
       burger.classList.toggle('burger_active');
@@ -12,13 +23,16 @@ window.addEventListener('DOMContentLoaded', () => {
 });
 
 window.addEventListener('scroll', () => {
-   if (document.documentElement.scrollTop > 1160) {
-      arrowTop.style.display = 'block';
-   }
-   if (document.documentElement.scrollTop < 1160) {
-      arrowTop.style.display = 'none';
-   }
+   showScrollTopBtn();
 });
+
+arrowTop.addEventListener("click", () => {
+   window.scrollTo({
+      top: 0,
+      left: 0,
+      behavior: 'smooth',
+   })
+})
 
 $(document).ready(function () {
    $('ul.catalog__tabs-menu').on('click', 'li:not(.catalog__tabs-item_active)', function () {
