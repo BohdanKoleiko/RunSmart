@@ -76,19 +76,26 @@
       overflow: hidden;
       cursor: pointer;
       font-size: 18px;
-      transition: all 0.5s;
+      transition: all 0.5s, border-color 0.2s;
+
       &:last-child {
          margin: 0;
       }
-      &_active {
-         border: none;
-         background-color: $main-color;
-         box-shadow: 5px 5px 15px #7e00009e;
-         color: #fff;
-      }
+
       &:hover {
          box-shadow: 5px 5px 15px $main-color;
          border-color: #fff;
+      }
+
+      &_active {
+         border: 2px solid transparent;
+         background-color: $main-color;
+         box-shadow: 5px 5px 15px #7e00009e;
+         color: #fff;
+
+         &:hover {
+            border-color: transparent;
+         }
       }
    }
    &__tabs-button {
@@ -181,7 +188,7 @@
          line-height: 21px;
          position: relative;
          &::before {
-            content: '';
+            content: "";
             display: block;
             position: absolute;
             top: 8px;

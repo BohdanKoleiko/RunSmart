@@ -20,6 +20,18 @@ window.addEventListener('DOMContentLoaded', () => {
       menu.classList.toggle('menu_active');
       fixedWrapper.classList.toggle('wrapper_fixed');
    });
+
+   // SHOW feedback SECTION WHEN IT IS IN A VIEW
+   const feedback = document.querySelector('.feedback');
+   const getFeedBackOffsetTop = feedback.offsetTop - feedback.offsetHeight / 2;
+
+   window.addEventListener('scroll', () => {
+      if (document.documentElement.scrollTop >= getFeedBackOffsetTop) {
+         feedback.style.cssText = 'transform: translateX(0); transition: all 0.5s;';
+      } else {
+         feedback.style.transform = 'translateX(-100%)';
+      }
+   });
 });
 
 window.addEventListener('scroll', () => {
@@ -32,7 +44,7 @@ arrowTop.addEventListener("click", () => {
       left: 0,
       behavior: 'smooth',
    })
-})
+});
 
 $(document).ready(function () {
    $('ul.catalog__tabs-menu').on('click', 'li:not(.catalog__tabs-item_active)', function () {
@@ -78,4 +90,10 @@ $(document).ready(function () {
          $('.order .modal__subtitle').text($('.catalog__header').eq(i).text());
       });
    });
+
+   // Innited new WOW instance
+   const wow = new WOW({
+      animateClass: 'animate__animated',
+   });
+   wow.init();
 });
